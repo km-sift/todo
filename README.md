@@ -7,6 +7,8 @@
 # To run the server in the container
 
 1. `bundle install`
+1. `rake db:create`
+1. `rake db:migrate`
 1. `rails server -p $PORT -b 0.0.0.0`
 
 Copied from https://www.freecodecamp.org/news/painless-rails-development-environment-setup-with-docker/
