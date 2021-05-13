@@ -1,7 +1,13 @@
 import React from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
+import TodoList from "./todo-list";
 
-const App = () => {
-  return <span>foo</span>;
-};
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TodoList />
+  </QueryClientProvider>
+);
 
 export default App;
