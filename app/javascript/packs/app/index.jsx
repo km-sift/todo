@@ -6,7 +6,9 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TodoList />
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <TodoList />
+    </div>
   </QueryClientProvider>
 );
 
