@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery } from "react-query";
+import AddTodo from "./add-todo";
 import Todo from "./todo";
 
 const TodoList = () => {
@@ -20,6 +21,7 @@ const TodoList = () => {
       {todos.map((todo) => (
         <Todo key={todo.id} {...todo} />
       ))}
+      <AddTodo />
     </ol>
   );
 };
